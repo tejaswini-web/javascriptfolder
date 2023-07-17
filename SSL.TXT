@@ -1,0 +1,76 @@
+<VirtualHost *:443>
+    ServerName test.tejaswini.store
+    DocumentRoot /var/www/test.tejaswini.store/public_html
+
+    SSLEngine on
+    SSLCertificateFile /var/www/test.tejaswini.store/public_html/certificate.crt
+    SSLCertificateKeyFile /var/www/test.tejaswini.store/public_html/private.key
+
+    <Directory /var/www/test.tejaswini.store/public_html>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+
+
+pemfile for SSL private key
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4tIhqaYA/PVhy
+tbtRNO6Rrp3x9c5V3UqjUlnzg9mLev6u8iafYzZHWAkSz9rieskGe7sLUvZJUZv5
+DuwgHFmtTHX83uzRatKeOc7IqcH4ppFGgDbYqI9vaWzB53PE7sfYkYtnUzUnakHu
+L6dYmR8HLTDfC0V6y0UL+0VCDMRZERWbZlN0LQ/tMHTJV4yyFCOMpnsVhOrcx0/E
+BJppxdr0qtbUrA9IYn2yMdEfNbE9IU0NY+gJdBK9kh0YulOB1wJCPGmaFDlr75gD
+8YlI3y8CZZk0GehhGpgr1xHiTSDxVWEadwNLcHTa/D5P27YIlPbxb73RqYvhMFdY
+DNCDENOdAgMBAAECggEAArBvD5gi2Xslj/yQBIKgGietuT0EjTn8w2LoYUre96dg
+dWT3qjQOjMonKaqPtNCDex4BaozBfiVto9DqRIr9IEKyMYDt0xxMpxYGTpr5RMH7
+ObZMrPvwJBxeqAiA0/aVmxRHsFllCYufd+cQNxJn77U0jUWl/Ujf2rsgEda49h39
+G4y2uCveGNBPNb79W3cOUlFFY5T+F/p8c7rtGuAxpFEXk91q6KP3KAIN+2+i1rkb
+U5BHCUjoDQtDe/C7BKa0b6LYHGuUf73qBf+THRqEik/nY54vHDBK4zmnVxkpae1S
+gUyMq861aTPN13A7d+km5vcHVecbMfFsw0dX0vg00QKBgQDoeMJqHn+yMiV5dW9d
+pLSf5eAi03uAM/uUPpGORUtoRY+opzbP02Ab845gopebS4sOzejPL2fltWfJSJf5
+0i1C5Ia8D9zensxBtm8Es46slxljFFePFxZ057HTdJnN0wI8yaSMpqDC7baH9oPX
+g87mBcfUP+e9O4MlcFBMMfHZ0QKBgQDLZin+4vBvQ8rX+Ys7DSWyXlbj2S9Xts/a
+Kehf0SaD6NARPfzzPwBFVPNppdX/xUaL8y5RtCW1NrnHv1PQUDI1eiGPuglEqEpG
+H4w+AzZodZ9xhDme6q7d9JhOGp/v7nAnqmOINR5St1D87m/qg+EIKPhPbKIX9GrS
+wnt08ymEDQKBgEb5v5m4sBIOv2RC13qGs+Lxwym+2cD9nfzX0YbXXzt5qW+7hb+T
+8I74IGsemRz/xngBo+fFuHnolcRdlpDee5UlwoEecrfBUelqMqED1Taad1TJvCXi
+zadpqeA+hErT9qXqhoOux/xbqVP/jqc5Be0yrJz/2dfrmJHQpaNtyEJRAoGBAJCS
+H0tyFp+fOfBlCNeCMscjUvNEjef0oqxYmThxusSLmEiJHN/wacrd5N205/SSTeBv
+iv674wl4ynf1wCcSuX1VP8Ge47OPQquxBMeXFPcOk7Pl3ebcvEo67n6lYgTyH3my
+HGjWCKWWctQ0zguMjUh1hnk9p8ELE1qWrZWkuF+JAoGAQ9NfVGV2TeRUAZ8a4PFq
+HjcNw2BC/S3ul5AZ1T3oNOOggvZ3hIZP68CDQSXPkUWNt9ug8ducIHNPmp/RkLxL
+Dt3DDPxCmeYkodZc//8nvfXfOOcnuA+sbLHtUKLdZPivExOuFn2aM2PPfj7LKol8
+1bAv6nlj66JPdNYOoYqJvyU=
+-----END PRIVATE KEY-----
+
+
+
+certificate
+-----BEGIN CERTIFICATE-----
+MIIEFTCCAv2gAwIBAgIUFi/1XFqi+9beMlIWAIbtF7m4n9wwDQYJKoZIhvcNAQEL
+BQAwgagxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQH
+Ew1TYW4gRnJhbmNpc2NvMRkwFwYDVQQKExBDbG91ZGZsYXJlLCBJbmMuMRswGQYD
+VQQLExJ3d3cuY2xvdWRmbGFyZS5jb20xNDAyBgNVBAMTK01hbmFnZWQgQ0EgZDU3
+ZDQ1ZjY2ZDRjOTA5MmFhNTdlM2NhZmMxZmJkZjMwHhcNMjMwNTE5MTczNDAwWhcN
+MjQwNTE4MTczNDAwWjAiMQswCQYDVQQGEwJVUzETMBEGA1UEAxMKQ2xvdWRmbGFy
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALi0iGppgD89WHK1u1E0
+7pGunfH1zlXdSqNSWfOD2Yt6/q7yJp9jNkdYCRLP2uJ6yQZ7uwtS9klRm/kO7CAc
+Wa1Mdfze7NFq0p45zsipwfimkUaANtioj29pbMHnc8Tux9iRi2dTNSdqQe4vp1iZ
+HwctMN8LRXrLRQv7RUIMxFkRFZtmU3QtD+0wdMlXjLIUI4ymexWE6tzHT8QEmmnF
+2vSq1tSsD0hifbIx0R81sT0hTQ1j6Al0Er2SHRi6U4HXAkI8aZoUOWvvmAPxiUjf
+LwJlmTQZ6GEamCvXEeJNIPFVYRp3A0twdNr8Pk/btgiU9vFvvdGpi+EwV1gM0IMQ
+050CAwEAAaOBuzCBuDATBgNVHSUEDDAKBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA
+MB0GA1UdDgQWBBQaFRYxNrvxz1mI+fQxXIx7g+nnWTAfBgNVHSMEGDAWgBQ5r7AP
+9Fs2MhVgA1A+nHOCyuC/XDBTBgNVHR8ETDBKMEigRqBEhkJodHRwOi8vY3JsLmNs
+b3VkZmxhcmUuY29tL2MzMmZhMjgzLTcxMjktNDMwNy04NGU3LTdjMjExYjcyNjk4
+OC5jcmwwDQYJKoZIhvcNAQELBQADggEBACQ8QsK/d/8J+twrq6Z0T/hL3ahYR1K3
+8cZke+Yt97NU6QlUN0YnZorur4LRskPR7zkvz2ll7nfG6V2V/iQZA2mnJrSrQTpA
+hK7r8wzuVFqO5LzqGmylmCQPr5wowNHMzxag7TmkxobOTtfXh53Zqd1AL9DLJKiV
+ecxMmdZMLzw1cW3t4e7YnkKGI+Zg8old/etmlyl8coDYo49K35ha9hqVYZTdS1cE
+xk3sodknNQqV2o+U6ruS9wMfTr3lCw2J97QN3QjCvn5xj+4hE+y9YhBxUBlK5mMx
+Ptd0XhrEG87vBk8+Pm5flb059nAwwEvB1dTZCC0QCZgE4IqV5KiHrpo=
+-----END CERTIFICATE-----
+

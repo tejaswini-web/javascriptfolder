@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>
+
+
+        bootstrap3
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col" style="width: 100px; height: 80px; background-color: greenyellow; margin-top: 5px; border-style: dashed;">footer</div>                 
+</div></div>
+
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col" style="width: 150px; height: 80px; background-color: blue;  padding: 40px;font-family: 'Times New Roman'; border-style: dashed;">
+            One of three columns
+          </div>
+          <div class="col" style="width: 150px; height: 80px; background-color: blue;  padding: 40px; border-style: dashed">
+            One of three columns
+          </div>
+          <div class="col" style="width: 150px; height: 80px; background-color: blue;  padding: 40px; border-style: dashed">
+            One of three columns
+          </div>
+        </div>
+
+
+        <div class="container text-center">
+            <div class="row align-items-start">
+        <div class="col" style="width:1000px; height: 489px; background-color: red;  text-align: center; border-style:dashed"> content area</div>
+    </div></div>
+
+  
+    <div class="container">
+        <div class="row">
+          <div class="col" style="width: 100px; height: 80px; background-color: greenyellow; margin-top: 5px; border-style: dashed;">footer</div>                 
+</div></div>
+</body>
+
+</html>

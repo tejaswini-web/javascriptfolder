@@ -1,0 +1,31 @@
+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
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Docker Image:
+A Docker Image is a read-only file with a bunch of instructions. When these instructions are executed, it creates a Docker container.
+
+Dockerfile:
+Dockerfile is a simple text file that consists of instructions to build Docker images.
+he specific commands you can use in a dockerfile are:
+
+FROM, PULL, RUN, and CMD
+
+FROM - Creates a layer from the ubuntu:18.04
+PULL - Adds files from your Docker repository
+RUN - Builds your container
+CMD - Specifies what command to run within the container
+
+https://www.simplilearn.com/tutorials/docker-tutorial/what-is-dockerfile

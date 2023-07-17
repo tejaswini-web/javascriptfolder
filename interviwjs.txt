@@ -1,0 +1,30 @@
+diff between var and let keyword?
+diff b/w let and const keyword?
+what is hoisting?
+diff b/w null and undefined?
+let a; console.log(a) reult will be null or undefined?
+if we write typeof a what will it pass?
+how can we check a null  value?
+var is null how to check it is null or undefined?
+diff between double equal and tripple equal?
+what is datatypes and primitive datatypes?
+basic diff b/w primitive and non primitive datatypes?
+how memory allocation works for non primitive datatypes?
+difference stack and heap?
+if i create a object how it will stored in heap?
+Arrow function and how it is diff from normal function?
+what are higher order function?
+what is closure?
+diff b/w higher order and closure?
+what is calling?
+normal javascript and nodejs(how nodejs work) diff?
+on 4 core cpu how nodejs will work?
+role of callback in event loop?
+run same code in nodejs and in browser what will happen? do it will hang the browser.why?
+react engine is same is same for node and browser?
+what are promises?
+what is callback problem and why we need promises for this?
+create a simple promise example?
+what is node cluster purpose of node cluster?
+what is passing a wake?
+

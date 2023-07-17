@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Registration Form</title>
+</head>
+<body>
+  <h1>Bansal Hospital Patient Registration Form</h1>
+  
+  <form>
+    <label>Full Name:</label>
+    <input type="text"></input>
+    <br/><br/>
+    
+    <label>Email:</label>
+    <input type="email"></input>
+    <br/><br/>
+    
+    <label>Phone Number:</label>
+    <input type="text"></input>
+    <br/><br/>
+    
+    <label>Address:</label>
+    <textarea id="address"></textarea>
+    <br/><br/>
+    
+    <label>Date of Birth:</label>
+    <input type="date"></input>
+    <br/><br/>
+
+    <Label>Patient Type:</label>
+    <select>
+    <option> Own </option>
+    <option> Esisc</option>
+
+    </select>
+    <br/><br/>
+    <label>Gender:</label>
+    <select id="gender">
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br/><br/>
+
+<label>State:</Label>
+<select>
+<option>Andhra Pradesh</option>
+<option>Madhya Pradesh</option>
+<option>Bihar</option>
+<option>Rajasthan</option>
+<option>Delhi</option>
+<option>Karnataka</option>
+<option>Odhisa</option>
+<option>Punjab</option>
+<option>Kerela</option>
+<option>Tamil Nadu</option>
+<option>Chattisgarh</option>
+<option>Gujarat</option>
+<option>Arunachal Pradesh</option>  
+</select>
+<br/><br/>
+    
+    <label>Medical History:</label>
+    <textarea id="medical_history"></textarea>
+    <br/><br/>
+    
+    <input type="submit" value="Submit"></input>
+  </form>
+</body>
+</html>

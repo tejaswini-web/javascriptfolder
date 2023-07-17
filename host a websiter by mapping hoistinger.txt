@@ -1,0 +1,515 @@
+dell@DESKTOP-HP8JRGJ MINGW64 ~/Downloads
+$ ssh -i "ubuntupem.pem" ubuntu@ec2-3-111-29-167.ap-south-1.compute.amazonaws.com
+The authenticity of host 'ec2-3-111-29-167.ap-south-1.compute.amazonaws.com (3.111.29.167)' can't be established.
+ED25519 key fingerprint is SHA256:b5COIiM8rKzfogXvcbW8ZmifyK++48Lxf7L0guSooeA.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'ec2-3-111-29-167.ap-south-1.compute.amazonaws.com' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-1031-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu May  4 06:10:48 UTC 2023
+
+  System load:  0.2421875         Processes:             100
+  Usage of /:   20.2% of 7.57GB   Users logged in:       0
+  Memory usage: 21%               IPv4 address for eth0: 172.31.1.97
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-1-97:~$ sudo su
+root@ip-172-31-1-97:/home/ubuntu# sudo su update
+su: user update does not exist or the user entry does not contain all the required fields
+root@ip-172-31-1-97:/home/ubuntu# sudo apt update
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [800 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [156 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [9144 B]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [830 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [131 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [604 B]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [729 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [121 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [14.3 kB]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [34.3 kB]
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [6464 B]
+Get:17 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [252 B]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1069 kB]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [221 kB]
+Get:25 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [14.3 kB]
+Get:26 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [873 kB]
+Get:27 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [137 kB]
+Get:28 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [604 B]
+Get:29 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [912 kB]
+Get:30 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [183 kB]
+Get:31 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [18.7 kB]
+Get:32 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [39.0 kB]
+Get:33 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [8736 B]
+Get:34 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [468 B]
+Get:35 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [40.9 kB]
+Get:36 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.2 kB]
+Get:37 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:38 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:39 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [22.2 kB]
+Get:40 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [15.0 kB]
+Get:41 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [548 B]
+Get:42 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 27.1 MB in 6s (4183 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+40 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@ip-172-31-1-97:/home/ubuntu# sudo apt install nginx
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core libdeflate0 libfontconfig1 libgd3 libjbig0 libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip2 libng
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip2 libtiff5 libwebp7 libxpm4 nginx-common
+Suggested packages:
+  libgd-tools fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libdeflate0 libfontconfig1 libgd3 libjbig0 libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip2 libng
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip2 libtiff5 libwebp7 libxpm4 nginx nginx-
+0 upgraded, 20 newly installed, 0 to remove and 40 not upgraded.
+Need to get 2689 kB of archives.
+After this operation, 8335 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libdeflate0 amd64 1.10-2 [70.9 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfontconfig1 amd64 2.13.1-4.2ubuntu5 [131 kB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8 amd64 2.1.2-0ubuntu1 [134 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8 amd64 8c-2ubuntu10 [2264 B]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.22.04.1 [29.2 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libwebp7 amd64 1.2.2-2 [206 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.4 [183 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.22.04.1 [36.4 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libgd3 amd64 2.3.0-2ubuntu2 [129 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-common all 1.18.0-6ubuntu14.3 [40.0 kB]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-geoip2 amd64 1.18.0-6ubuntu14.3 [11.9
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-6ubuntu14.3
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-6ubuntu14.3
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-mail amd64 1.18.0-6ubuntu14.3 [45.7 kB]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream amd64 1.18.0-6ubuntu14.3 [72.8 kB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream-geoip2 amd64 1.18.0-6ubuntu14.3 [10
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-core amd64 1.18.0-6ubuntu14.3 [482 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.3 [3882 B]
+Fetched 2689 kB in 1s (2573 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package fonts-dejavu-core.
+(Reading database ... 63657 files and directories currently installed.)
+Preparing to unpack .../00-fonts-dejavu-core_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-2build1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../01-fontconfig-config_2.13.1-4.2ubuntu5_all.deb ...
+Unpacking fontconfig-config (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../02-libdeflate0_1.10-2_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.10-2) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../03-libfontconfig1_2.13.1-4.2ubuntu5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../04-libjpeg-turbo8_2.1.2-0ubuntu1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../05-libjpeg8_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../06-libjbig0_2.1-3.1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../07-libwebp7_1.2.2-2_amd64.deb ...
+Unpacking libwebp7:amd64 (1.2.2-2) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../08-libtiff5_4.3.0-6ubuntu0.4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.3.0-6ubuntu0.4) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../09-libxpm4_1%3a3.5.12-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../10-libgd3_2.3.0-2ubuntu2_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.0-2ubuntu2) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../11-nginx-common_1.18.0-6ubuntu14.3_all.deb ...
+Unpacking nginx-common (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package libnginx-mod-http-geoip2.
+Preparing to unpack .../12-libnginx-mod-http-geoip2_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../13-libnginx-mod-http-image-filter_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking libnginx-mod-http-image-filter (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../14-libnginx-mod-http-xslt-filter_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../15-libnginx-mod-mail_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking libnginx-mod-mail (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../16-libnginx-mod-stream_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking libnginx-mod-stream (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package libnginx-mod-stream-geoip2.
+Preparing to unpack .../17-libnginx-mod-stream-geoip2_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../18-nginx-core_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking nginx-core (1.18.0-6ubuntu14.3) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../19-nginx_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking nginx (1.18.0-6ubuntu14.3) ...
+Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Setting up libdeflate0:amd64 (1.10-2) ...
+Setting up nginx-common (1.18.0-6ubuntu14.3) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Setting up libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Setting up libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.3) ...
+Setting up fonts-dejavu-core (2.37-2build1) ...
+Setting up libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Setting up libwebp7:amd64 (1.2.2-2) ...
+Setting up libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.3) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu10) ...
+Setting up libnginx-mod-mail (1.18.0-6ubuntu14.3) ...
+Setting up fontconfig-config (2.13.1-4.2ubuntu5) ...
+Setting up libnginx-mod-stream (1.18.0-6ubuntu14.3) ...
+Setting up libtiff5:amd64 (4.3.0-6ubuntu0.4) ...
+Setting up libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Setting up libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.3) ...
+Setting up libgd3:amd64 (2.3.0-2ubuntu2) ...
+Setting up libnginx-mod-http-image-filter (1.18.0-6ubuntu14.3) ...
+Setting up nginx-core (1.18.0-6ubuntu14.3) ...
+ * Upgrading binary nginx
+Setting up nginx (1.18.0-6ubuntu14.3) ...
+Processing triggers for ufw (0.36.1-4build1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-1-97:/home/ubuntu# nginx -v
+nginx version: nginx/1.18.0 (Ubuntu)
+root@ip-172-31-1-97:/home/ubuntu# cd /var/www
+root@ip-172-31-1-97:/var/www# ls
+html
+root@ip-172-31-1-97:/var/www# mkdir www.ebazar.fun
+root@ip-172-31-1-97:/var/www# ls
+html  www.ebazar.fun
+root@ip-172-31-1-97:/var/www# cd www.ebazar.fun/
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# ls
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# vi index.html
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# cat index.html
+hello this is tejaswini
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# pwd
+/var/www/www.ebazar.fun
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# cd /etc/ngnix
+bash: cd: /etc/ngnix: No such file or directory
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# ls
+index.html
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# cd /etc/ngnix
+bash: cd: /etc/ngnix: No such file or directory
+root@ip-172-31-1-97:/var/www/www.ebazar.fun# cd /etc/nginx
+root@ip-172-31-1-97:/etc/nginx# ls
+conf.d        fastcgi_params  koi-win     modules-available  nginx.conf    scgi_params      sites-enabled  uwsgi_params
+fastcgi.conf  koi-utf         mime.types  modules-enabled    proxy_params  sites-available  snippets       win-utf
+root@ip-172-31-1-97:/etc/nginx# cat nginx.conf
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+        worker_connections 768;
+ # multi_accept on;
+}
+
+http {
+
+        ##
+        # Basic Settings
+        ##
+
+        sendfile on;
+        tcp_nopush on;
+        types_hash_max_size 2048;
+        # server_tokens off;
+
+        # server_names_hash_bucket_size 64;
+        # server_name_in_redirect off;
+
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+
+        ##
+        # SSL Settings
+        ##
+
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+        ssl_prefer_server_ciphers on;
+
+        ##
+        # Logging Settings
+        ##
+
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
+        ##
+        # Gzip Settings
+        ##
+
+        gzip on;
+
+        # gzip_vary on;
+        # gzip_proxied any;
+        # gzip_comp_level 6;
+        # gzip_buffers 16 8k;
+        # gzip_http_version 1.1;
+        # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+        ##
+        # Virtual Host Configs
+        ##
+
+        include /etc/nginx/conf.d/*.conf;
+        include /etc/nginx/sites-enabled/*;
+}
+
+
+#mail {
+#       # See sample authentication script at:
+#       # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#       # auth_http localhost/auth.php;
+#       # pop3_capabilities "TOP" "USER";
+#       # imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#       server {
+#               listen     localhost:110;
+#               protocol   pop3;
+#               proxy      on;
+#       }
+#
+#       server {
+#               listen     localhost:143;
+#               protocol   imap;
+#               proxy      on;
+#       }
+#}
+root@ip-172-31-1-97:/etc/nginx# ls
+conf.d        fastcgi_params  koi-win     modules-available  nginx.conf    scgi_params      sites-enabled  uwsgi_params
+fastcgi.conf  koi-utf         mime.types  modules-enabled    proxy_params  sites-available  snippets       win-utf
+root@ip-172-31-1-97:/etc/nginx# cd s
+bash: cd: s: No such file or directory
+root@ip-172-31-1-97:/etc/nginx# cd  sites-available/
+root@ip-172-31-1-97:/etc/nginx/sites-available# ls
+default
+root@ip-172-31-1-97:/etc/nginx/sites-available# cat default
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://www.nginx.com/resources/wiki/start/
+# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+# https://wiki.debian.org/Nginx/DirectoryStructure
+#
+# In most cases, administrators will remove this file from sites-enabled/ and
+# leave it as reference inside of sites-available where it will continue to be
+# updated by the nginx packaging team.
+#
+# This file will automatically load configuration files provided by other
+# applications, such as Drupal or Wordpress. These applications will be made
+# available underneath a path with that package name, such as /drupal8.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+        # Note: You should disable gzip for SSL traffic.
+        # See: https://bugs.debian.org/773332
+        #
+        # Read up on ssl_ciphers to ensure a secure configuration.
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+        root /var/www/html;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+
+        # pass PHP scripts to FastCGI server
+        #
+        #location ~ \.php$ {
+        #       include snippets/fastcgi-php.conf;
+        #
+        #       # With php-fpm (or other unix sockets):
+        #       fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        #}
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        #location ~ /\.ht {
+        #       deny all;
+        #}
+}
+
+
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+#server {
+#       listen 80;
+#       listen [::]:80;
+#
+#       server_name example.com;
+#
+#       root /var/www/example.com;
+#       index index.html;
+#
+#       location / {
+#               try_files $uri $uri/ =404;
+#       }
+#}
+root@ip-172-31-1-97:/etc/nginx/sites-available# vi www.ebazar.fun.conf
+root@ip-172-31-1-97:/etc/nginx/sites-available# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+root@ip-172-31-1-97:/etc/nginx/sites-available# ln -s /etc/nginx/sites-available/www.ebazar.fun.conf /etc/nginx/sites-enabled/www.ebazar.fun.conf
+root@ip-172-31-1-97:/etc/nginx/sites-available# ls
+default  www.ebazar.fun.conf
+root@ip-172-31-1-97:/etc/nginx/sites-available# cd ../sites-enabled/
+root@ip-172-31-1-97:/etc/nginx/sites-enabled# ls
+default  www.ebazar.fun.conf
+root@ip-172-31-1-97:/etc/nginx/sites-enabled# cat www.ebazar.fun.conf
+server {
+        listen 80;
+        listen [::]:80;
+        server_name www.ebazar.fun;
+
+        root /var/www/www.ebazar.fun;
+        index index.html;
+        try_files $uri /index.html;
+}
+
+
+
+
+root@ip-172-31-1-97:/etc/nginx/sites-enabled# systemctl restart nginx
+root@ip-172-31-1-97:/etc/nginx/sites-enabled# s
+Display all 219 possibilities? (y or n)
+root@ip-172-31-1-97:/etc/nginx/sites-enabled# systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2023-05-04 07:06:59 UTC; 1min 18s ago
+       Docs: man:nginx(8)
+    Process: 2498 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 2502 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 2503 (nginx)
+      Tasks: 2 (limit: 1141)
+     Memory: 2.6M
+        CPU: 25ms
+     CGroup: /system.slice/nginx.service
+             ├─2503 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             └─2504 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: nginx.service: Deactivated successfully.
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: Starting A high performance web server and a reverse proxy server...
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: Started A high performance web server and a reverse proxy server.
+root@ip-172-31-1-97:/etc/nginx/sites-enabled# cd ..
+root@ip-172-31-1-97:/etc/nginx# cd /var/log/nginx
+root@ip-172-31-1-97:/var/log/nginx# ls
+access.log  error.log
+root@ip-172-31-1-97:/var/log/nginx# vi error.log
+root@ip-172-31-1-97:/var/log/nginx# vi access.log
+root@ip-172-31-1-97:/var/log/nginx# systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2023-05-04 07:06:59 UTC; 12min ago
+       Docs: man:nginx(8)
+    Process: 2498 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 2502 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 2503 (nginx)
+      Tasks: 2 (limit: 1141)
+     Memory: 2.6M
+        CPU: 25ms
+     CGroup: /system.slice/nginx.service
+             ├─2503 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             └─2504 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: nginx.service: Deactivated successfully.
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: Starting A high performance web server and a reverse proxy server...
+May 04 07:06:59 ip-172-31-1-97 systemd[1]: Started A high performance web server and a reverse proxy server.
+root@ip-172-31-1-97:/var/log/nginx# ls
+access.log  error.log
+root@ip-172-31-1-97:/var/log/nginx# cd /etc/nginx
+root@ip-172-31-1-97:/etc/nginx#
+

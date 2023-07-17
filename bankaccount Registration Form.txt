@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Account Registration</title>
+</head>
+<body>
+  <h2>Bank Account Registration Form</h2>
+  <form>
+    <label >Full Name:</label>
+    <input type="text"><br><br>
+    
+    <label>Email:</label>
+    <input type="email"><br><br>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel"><br><br>
+
+    <label>Area to which bank Belongs To:</label>
+    <input Type="textArea"><br/><br/>
+    
+    <label for="address">Address:</label>
+    <textarea id="address"></textarea><br><br>
+    
+    <label for="account-type">Account Type:</label>
+    <select id="account-type" name="account-type" required>
+      <option value="">Select Account Type</option>
+      <option value="savings">Savings Account</option>
+      <option value="current">Current Account</option>
+    </select><br><br>
+    
+    <label for="initial-deposit">Initial Deposit:</label>
+    <input type="number"><br><br>
+
+
+    <label>Nominee:</label>
+    <input type="text">
+    <br/><br/>
+    
+    <label for="password">Password:</label>
+    <input type="password"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

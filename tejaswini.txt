@@ -1,0 +1,9 @@
+server {
+        listen 80;
+        listen [::]:80;
+        server_name test.tejaswini.store;
+
+        root /var/www/test.tejaswini.store;
+        index index.html;
+        try_files $uri /index.html;
+}
